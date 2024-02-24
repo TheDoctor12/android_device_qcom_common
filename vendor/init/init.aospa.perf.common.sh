@@ -13,10 +13,10 @@ function write_irq_affinity() {
 }
 
 # IRQ Tuning
-# kgsl_3d0_irq -> CPU 1
-# msm_drm -> CPU 2
-write_irq_affinity kgsl_3d0_irq 1
-write_irq_affinity msm_drm 2
+# kgsl_3d0_irq -> CPU 6
+# msm_drm -> CPU 7
+write_irq_affinity kgsl_3d0_irq 6
+write_irq_affinity msm_drm 7
 
 # IRQ Tuning for 5.15 and newer targets
 write_irq_affinity hfi 1
